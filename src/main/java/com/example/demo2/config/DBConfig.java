@@ -14,7 +14,8 @@ public class DBConfig {
 	        //dataSourceBuilder.url("jdbc:sqlite:srirubber-v3.db");
                         dataSourceBuilder.driverClassName("com.mysql.jdbc.Driver");
 	        dataSourceBuilder.url("jdbc:mysql://localhost:3306/mydatabase");
-                
+                dataSourceBuilder.username("root");
+                dataSourceBuilder.password("Trixware");
 	        return dataSourceBuilder.build();   
 	}
 }
